@@ -7,7 +7,7 @@ import Input from '@mui/joy/Input';
 import Button from '@mui/joy/Button';
 import Link from '@mui/joy/Link';
 
-export default function Home() {
+export default function SignUp() {
   return (
     <Sheet
       sx={{
@@ -35,25 +35,26 @@ export default function Home() {
       >
         <div>
           <Typography level="h4" component="h1">
-            <strong>Welcome back 👋</strong>
+            <strong>Welcome 👋</strong>
           </Typography>
-          <Typography level="body-sm">Sign in to continue.</Typography>
+          <Typography level="body-sm">Sign up for an account.</Typography>
         </div>
-        <FormControl id="email">
+        <FormControl>
           <FormLabel>Email</FormLabel>
           <Input name="email" type="email" placeholder="johndoe@email.com" />
         </FormControl>
-        <FormControl id="password">
+        <FormControl>
           <FormLabel>Password</FormLabel>
           <Input name="password" type="password" placeholder="password" />
         </FormControl>
-        <Button sx={{ mt: 1 }}>Log in</Button>
+
+        <Button sx={{ mt: 1 }}>Create account</Button>
         <Typography
-          endDecorator={<Link href="/sign-up">Sign up</Link>}
+          endDecorator={<Link href="/">Log in</Link>}
           fontSize="sm"
           sx={{ alignSelf: 'center' }}
         >
-          Don&apos;t have an account?
+          Already have an account?
         </Typography>
       </Sheet>
     </Sheet>
